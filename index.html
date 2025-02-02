@@ -52,16 +52,16 @@
 
 <body>
 
-    <header class="mb-12 md:mb-20">
+    <header class="mb-12 sm:mb-20">
         <!-- Navbar Section  -->
         <nav class="bg-light">
-            <div class="max-w-screen-xl mx-auto navbar sora border border-blackish lg:border-none mb-8">
+            <div class="max-w-screen-xl mx-auto navbar sora border border-blackish sm:border-none mb-8">
                 <div class="navbar-start space-x-2">
-                    <img class="border border-blackish lg:border-none" src="c1-assets/logo-header.png" alt="">
-                    <h1 class="hidden lg:inline-block">Browse<span class="text-accent">4</span>Pets</h1>
+                    <img class="border border-blackish sm:border-none" src="c1-assets/logo-header.png" alt="">
+                    <h1 class="hidden sm:inline-block">Browse<span class="text-accent">4</span>Pets</h1>
                 </div>
 
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden md:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Find a pet</a></li>
                         <li><a>Breeds</a></li>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="navbar-end space-x-2">
-                    <div class="hidden lg:flex lg:items-center">
+                    <div class="hidden sm:flex sm:items-center">
                         <button class="btn btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -86,18 +86,15 @@
                             </svg>
                         </button>
                         <button class="btn btn-outline border-accent btn-sm mr-2">Login</button>
-                        <button class="btn btn-warning btn-sm mr-2">Register</button>
+                        <button class="btn btn-sm bg-accent">Register</button>
                     </div>
 
-                    <div class="dropdown relative lg:hidden">
-                        <div tabindex="0" role="button" class="border border-blackish lg:border-none">
+                    <div class="dropdown relative sm:hidden">
+                        <div tabindex="0" role="button" class="border border-blackish sm:border-none">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
-                            <!-- <svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="black" stroke="black" stroke-width="2">
-                                <path d="M4 6h16M4 6h16M4 6h16M4"/>
-                            </svg> -->
                         </div>
                         <div class="">
                             <ul tabindex="0"
@@ -113,20 +110,21 @@
                 </div>
             </div>
         </nav>
+
         <!-- Hero Section  -->
         <div class="hero sora">
             <div class="max-w-screen-xl mx-2 relative">
-                <div class=" -z-10">
+                <div class="-z-10 pt-20 sm:pt-10 md:pt-0">
                     <img class="w-full" src="c1-assets/cat-big.png" />
                 </div>
-                <div class="absolute top-0 md:w-1/2">
+                <div class="absolute top-0 sm:w-1/2">
                     <h1 class="adlam text-3xl lg:text-6xl ">Pamper Your Pet, Because They Deserve the Bes</h1>
                     <p class="py-6">
                         Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
                         and
                         make tails wag with joy!
                     </p>
-                    <button class="btn btn-md lg:btn-lg bg-accent">Find a pet</button>
+                    <button class="btn lg:btn-md bg-accent">Find a pet</button>
                 </div>
             </div>
         </div>
@@ -134,7 +132,7 @@
 
     <main>
         <!-- Browse By Category Section  -->
-        <section class="adlam mx-2  mb-16 md:mb-24">
+        <section class="adlam mx-2  mb-12 sm:mb-20">
             <div class="max-w-screen-xl lg:mx-auto">
                 <h1 class="text-3xl mb-4 md:mb-8">Browse By Categories</h1>
                 <div class="card-container grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6 md:gap-6">
@@ -230,7 +228,7 @@
         <section class="adlam mx-2 bg-light py-32">
             <div class="product-container max-w-screen-xl mx-auto">
                 <h1 class="text-3xl mb-5">Trending Pet Products</h1>
-                <div class="full-content grid grid-cols-1 lg:grid-cols-[30%_auto] gap-5">
+                <div class="full-content grid grid-cols-1 sm:grid-cols-[30%_auto] gap-5">
                     <!-- Big Card  -->
                     <div class="bg-cardbg min-h-[320px] px-6 py-8 rounded-xl relative">
                         <div class="space-y-2">
@@ -239,7 +237,7 @@
                           <button class="sora text-base btn bg-white px-8">Shop Now</button>
                         </div>
                         <figure class="absolute right-0 bottom-0">
-                            <img class="w-3/4 md:w-full" src="./c1-assets/cute-pet-small.png" />
+                            <img class="w-3/4 sm:w-full" src="./c1-assets/cute-pet-small.png" />
                         </figure>
                     </div>
                     <!-- Small cards  -->
@@ -376,16 +374,16 @@
         </section>
 
         <!-- Everyday low price  -->
-        <section class="adlam mx-2  mb-16 md:mb-24">
-            <div class="max-w-screen-xl lg:mx-auto">
-                <h2 class="text-4xl mb-4 md:mb-8">Everyday Low Price</h2>
-                <div class="card-container grid gap-5 md:grid-cols-[60%_auto]">
+        <section class="adlam mx-2  mb-20 sm:mb-20">
+            <div class="max-w-screen-xl sm:mx-auto">
+                <h2 class="text-4xl mb-4 sm:mb-8">Everyday Low Price</h2>
+                <div class="card-container grid gap-2 sm:grid-cols-[60%_auto]">
                     <!-- Left Card  -->
-                    <div class="rounded-xl flex flex-col md:flex-row md:justify-between md:items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
-                        <div class="ml-12 mt-12">
-                            <p class="sora hidden md:block">Under Price</p>
+                    <div class="rounded-xl flex flex-col sm:flex-row sm:justify-between sm:items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
+                        <div class="ml-8 mt-8">
+                            <p class="sora hidden sm:block">Under Price</p>
                             <h4 class="text-3xl">Pet Grooming Mitt</h4>
-                            <p class="hidden md:block text-2xl text-white">(Easy Hair Removal)</p>
+                            <p class="hidden sm:block text-2xl text-white">(Easy Hair Removal)</p>
                             <h1 class="text-5xl">$7.99</h1>
                         </div>
                         <figure class="relative ml-auto">
@@ -393,10 +391,10 @@
                         </figure>
                     </div>
                     <!-- Right Card  -->
-                    <div class="rounded-xl flex flex-col md:flex-row md:justify-between md:items-center bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A]">
-                        <div class="ml-12 mt-12">
-                            <h4 class="text-3xl">T-Shirt for Dogs</h4>
-                            <h1 class="text-5xl text-accent">$7.99</h1>
+                    <div class="rounded-xl flex flex-col sm:flex-row sm:justify-between sm:items-center bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A]">
+                        <div class="ml-6 mt-4">
+                            <h4 class="text-2xl">T-Shirt for Dogs</h4>
+                            <h1 class="text-4xl text-accent">$7.99</h1>
                         </div>
                         <figure class="relative ml-auto">
                             <img src="./c1-assets/cute-pet-mid.png" alt="">
@@ -407,11 +405,58 @@
             </div>
         </section>
 
-
+        <!-- Extra Space section  -->
+        <section class="relative h-[220px] mx-2 ">
+            <!-- Floating Section: Get Awesome news -->
+            <div class="sora z-1 absolute w-full">
+                <div class="bg-light max-w-screen-xl lg:mx-auto rounded-2xl flex justify-center">
+                    <div class="my-8 flex  flex-col items-center sm:flex-row gap-20">
+                        <div>
+                            <img src="./c1-assets/cute-pet-mid.png" alt="">
+                        </div>
+                        <div class="space-y-6">
+                            <h1 class="adlam text-3xl text-blackish">Get Pawsome News!</h1>
+                            <p>Exclusive training tips, ticks, product deals and more.</p>
+                            <input type="email" placeholder="Enter email...." class="input input-bordered w-full max-w-sm rounded-lg" />
+                            <button class="block btn btn-sm px-6 bg-accent">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    
+
+    <footer class="pb-40 pt-[700px] sm:pt-80  mx-2 bg-accent sora -z-10">
+        <section class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:justify-between sm:justify-items-end footer-container max-w-screen-xl mx-auto">
+            <!-- First Column -->
+            <div class="space-y-4 justify-self-start">
+                <div class="flex gap-2 items-center">
+                    <img src="./c1-assets/logo-footer.png" alt="">
+                    <h3 class="text-2xl">Browse Pets</h3>
+                </div>
+                <p class="max-w-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <!-- Second Column  -->
+            <ul class="flex flex-col gap-2 justify-between">
+                <li><a href="">Find a pet</a></li>
+                <li><a href="">Breeds</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+            <!-- Third Column -->
+            <div class="self-end">
+                <p class="text-base font-bold">Follow Us</p>
+                <ul class="flex gap-5">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
 </body>
 
 </html>
