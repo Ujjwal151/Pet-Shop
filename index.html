@@ -27,6 +27,7 @@
             font-family: "Sora", serif;
             font-size: 20px;
         }
+
     </style>
 
     <!-- Custom Tailwind Configuration (Ex: Colors) -->
@@ -124,11 +125,12 @@
                         and
                         make tails wag with joy!
                     </p>
-                    <button class="btn lg:btn-md bg-accent">Find a pet</button>
+                    <button class="btn lg:btn-md bg-accent animate-bounce">Find a pet</button>
                 </div>
             </div>
         </div>
     </header>
+
 
     <main>
         <!-- Browse By Category Section  -->
@@ -225,7 +227,7 @@
         </section>
 
         <!-- Trending Pet Products  -->
-        <section class="adlam mx-2 bg-light py-32">
+        <section class="adlam mx-2 bg-light py-16 sm:py-24">
             <div class="product-container max-w-screen-xl mx-auto">
                 <h1 class="text-3xl mb-5">Trending Pet Products</h1>
                 <div class="full-content grid grid-cols-1 sm:grid-cols-[30%_auto] gap-5">
@@ -405,7 +407,7 @@
             </div>
         </section>
 
-        <!-- Extra Space section  -->
+        <!-- Floating section inside -->
         <section class="relative h-[220px] mx-2 ">
             <!-- Floating Section: Get Awesome news -->
             <div class="sora z-1 absolute w-full">
@@ -424,9 +426,7 @@
                 </div>
             </div>
         </section>
-
     </main>
-
 
     <footer class="pb-40 pt-[700px] sm:pt-80  mx-2 bg-accent sora -z-10">
         <section class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:justify-between sm:justify-items-end footer-container max-w-screen-xl mx-auto">
